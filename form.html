@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css.css" />
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="form">
+			<form action="#" id="form" class="form_body">
+				<h1 class="form_title">Отправка даних на почту</h1>
+				<div class="form_item">
+					<label for="formName" class="form_label">Name*</label>
+					<input id="formName" type="text" name="name" class="form_input req">
+				</div>
+				<div class="form_item">
+					<label for="formEmail" class="form_label">Email*</label>
+					<input id="formEmail" type="text" name="email" class="form_input req email">
+				</div>
+				<div class="form_item">
+					<div class="form_label">left right</div>
+					<div class="options">
+						<div class="option_item">
+							<input id="formRightHanded" type="radio"  value="right"  name="hand" class="options_input">
+							<label for="formRightHanded" class="options_label"><span>Right</span></label>
+						</div>
+						<div class="option_item">
+							<input id="formLeftHanded" checked type="radio" value="left"  name="hand" class="options_input">
+							<label for="formLeftHanded" class="options_label"><span>left</span></label>
+						</div>
+					</div>
+				</div>
+				<div class="form_item">
+					<label for="formMessage" class="form_label">Message*</label>
+					<textarea id="formMessage" type="text" name="message" class="form_input"></textarea>
+				</div>
+				<div class="form_item">
+					<div class="form_label">Age</div>
+					<select name="age" class="select">
+						<option value="ot 18 to 25 selected">Small</option>
+						<option value="ot 25 to 45">middle</option>
+						<option value="ot 45 ">old</option>
+					</select>
+				</div>
+				<div class="form_item">
+					<div class="form_label">Add Foto</div>
+					<div class="file">
+						<div class="file_item">
+							<input accept=".jpg, .png, .gif" type="file" name="image" id="formImage" class="file_input">
+							<div class="file_button"> Choose</div>
+						</div>
+						<div id="formPreview" class="file_preview"></div>
+					</div>
+				</div>
+				<div class="form_item">
+					<div class="checkbox">
+						<input type="checkbox" checked name="agreement" id="formAgreement" class="checkbox_input req">
+						<label for="formAgreement" class="checkbox_label"><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta facilis ipsum,	<a href="">facilis ipsum,</a> cum sunt nobis beatae.</span></label>
+					</div>
+				</div>
+				<button type="submit" class="form_button">Submit</button>
+
+
+			</form>
+		</div>
+	</div>
+<script src="js.js"></script>	
+</body>
+</html>
